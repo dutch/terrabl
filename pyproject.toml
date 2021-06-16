@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "terrabl"
+version = "0.1.0"
+description = "Terraform Bootloader"
+authors = ["dutch <chris@lamberson.online>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://github.com/dutch/terrabl"
+repository = "https://github.com/dutch/terrabl.git"
+keywords = ["terraform"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0.1"
+importlib_metadata = {version = "^4.5.0", python = "<3.8"}
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+
+[tool.poetry.scripts]
+terrabl = "terrabl.console:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
